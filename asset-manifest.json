@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/weddingDA/static/css/main.c98a4754.css",
+    "main.js": "/weddingDA/static/js/main.42c2d08a.js",
+    "static/js/787.5b30f80b.chunk.js": "/weddingDA/static/js/787.5b30f80b.chunk.js",
+    "static/media/ev2.png": "/weddingDA/static/media/ev2.df77902a320cc1cee5a0.png",
+    "static/media/lemon.otf": "/weddingDA/static/media/lemon.024c8ca4a177ed80a27a.otf",
+    "static/media/bg.png": "/weddingDA/static/media/bg.e35a9ea47855de45096e.png",
+    "static/media/madelyn.otf": "/weddingDA/static/media/madelyn.049480f85318a9c4ab6d.otf",
+    "static/media/transfer.jpeg": "/weddingDA/static/media/transfer.d673d011ba17421a6890.jpeg",
+    "static/media/sweet.ttf": "/weddingDA/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
+    "static/media/banket.jpeg": "/weddingDA/static/media/banket.fa5d12908193c37b6eae.jpeg",
+    "static/media/miama.otf": "/weddingDA/static/media/miama.f5fe96ddb11508620dca.otf",
+    "static/media/montserrat.ttf": "/weddingDA/static/media/montserrat.9e32cee38e5268e05e87.ttf",
+    "static/media/fiinal.jpeg": "/weddingDA/static/media/fiinal.1be30b2cb07bde2ec1a8.jpeg",
+    "static/media/leafs.png": "/weddingDA/static/media/leafs.11b83d945bbff8c39adb.png",
+    "static/media/4.webp": "/weddingDA/static/media/4.268b6c6f5002a27058a0.webp",
+    "static/media/Oranienbaum.ttf": "/weddingDA/static/media/Oranienbaum.e5625604e9200634b240.ttf",
+    "static/media/welcome.jpeg": "/weddingDA/static/media/welcome.ccf127e479464022e92c.jpeg",
+    "static/media/exo.otf": "/weddingDA/static/media/exo.4cc3c0816f37acdf2605.otf",
+    "static/media/1.jpeg": "/weddingDA/static/media/1.19b0a680db7d515432f6.jpeg",
+    "static/media/3.jpeg": "/weddingDA/static/media/3.f3de58f18c476ccabf9e.jpeg",
+    "static/media/czizh.ttf": "/weddingDA/static/media/czizh.4cee4f4a3385bddc39b1.ttf",
+    "static/media/5.jpg": "/weddingDA/static/media/5.754c6183ae84dd4d4af5.jpg",
+    "static/media/2.jpeg": "/weddingDA/static/media/2.52d681f24441fa0b00c3.jpeg",
+    "static/media/25.png": "/weddingDA/static/media/25.c188c8ae0505d19d1015.png",
+    "static/media/bg.jpg": "/weddingDA/static/media/bg.d4d0115fd01e6249c34c.jpg",
+    "static/media/6.jpg": "/weddingDA/static/media/6.fe1330665be6878e9729.jpg",
+    "static/media/maki.ttf": "/weddingDA/static/media/maki.9d411b80cc14eea780bf.ttf",
+    "static/media/lavander-top.png": "/weddingDA/static/media/lavander-top.1dcf46ea595c405a78f9.png",
+    "index.html": "/weddingDA/index.html",
+    "main.c98a4754.css.map": "/weddingDA/static/css/main.c98a4754.css.map",
+    "main.42c2d08a.js.map": "/weddingDA/static/js/main.42c2d08a.js.map",
+    "787.5b30f80b.chunk.js.map": "/weddingDA/static/js/787.5b30f80b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c98a4754.css",
+    "static/js/main.42c2d08a.js"
+  ]
+}
