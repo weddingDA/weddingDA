@@ -5,7 +5,8 @@ import FourthBlock from "./FourthBlock";
 import FifthBlock from "./FifthBlock";
 import SixBlock from "./SixBlock";
 import SevenBlock from "./SevenBlock";
-
+import TimerComponent from "./TimerComponent";
+import CommonInfo from "./CommonInfo";
 import { Container } from "../styles";
 import { useState, useEffect } from "react";
 
@@ -47,9 +48,11 @@ function AlexanderNataly() {
       </audio> */}
       <FirstBlock />
       <SecondBlock />
-      <FourthBlock />
       <ThirdBlock />
+      <FourthBlock />
       <FifthBlock />
+      <TimerComponent />
+      <CommonInfo />
       <SixBlock />
       <SevenBlock />
     </Container>

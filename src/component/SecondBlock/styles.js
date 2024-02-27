@@ -2,7 +2,8 @@ import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
 import Datetime from "./assets/25.png";
-import bg from "./assets/bg.png";
+import bg from "./assets/bg.jpg";
+import leafs from "./assets/leafs.png";
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -17,11 +18,11 @@ export const Container = styled.div`
     ),
     url(${bg});
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 500px;
+  background-position: -200px;
 
   @media (max-width: 680px) {
     padding: 20px 0 80px;
-    background-size: auto;
   }
 `;
 
@@ -65,12 +66,12 @@ export const Bg2 = styled.div`
 `;
 
 export const Info = styled.div`
-  font-family: "miama";
+  font-family: "czizh";
   width: 350px;
 `;
 
 export const Title = styled.p`
-  font-size: 42px;
+  font-size: 49px;
   color: black;
   text-align: center;
   opacity: 0;
@@ -88,7 +89,6 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "czizh";
   font-size: 24px;
   font-weight: 400;
   color: black;
@@ -103,7 +103,7 @@ export const Text = styled.p`
 
 export const Date = styled.p`
   font-family: "miama";
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 400;
   color: black;
   text-align: center;
@@ -112,6 +112,7 @@ export const Date = styled.p`
 
 export const Month = styled.p`
   font-size: 32px;
+  font-family: "miama";
   color: black;
   text-align: center;
   margin: 42px 0 0;
@@ -133,7 +134,7 @@ export const Calendar = styled.div`
     position: absolute;
     width: 40px;
     height: 40px;
-    bottom: 82px;
+    top: 66px;
     right: 72px;
 
     animation: aniHeart 3s infinite;
@@ -155,4 +156,12 @@ export const Calendar = styled.div`
 export const CalSceleton = styled.div`
   height: 350px;
   width: 350px;
+`;
+
+export const Leafs = styled.div`
+  background-image: url(${leafs});
+  height: 141px;
+  width: 100%;
+  max-width: 350px;
+  background-size: cover;
 `;

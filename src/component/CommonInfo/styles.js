@@ -60,10 +60,19 @@ export const Info = styled.div`
   font-family: "miama";
   width: 350px;
   z-index: 2;
+
+  a {
+    padding: 12px 20px 0;
+    text-align: center;
+    border-radius: 32px;
+    background-color: #d1d8ca;
+    color: black;
+    font-size: 24px;
+  }
 `;
 
 export const Title = styled.p`
-  font-size: 52px;
+  font-size: 32px;
   font-family: "miama";
   color: black;
   text-align: center;
@@ -181,6 +190,21 @@ export const Leafs = styled.div`
   right: 0;
   bottom: -20px;
   opacity: 0.2;
+  width: 100%;
+  max-width: 350px;
+  background-size: cover;
+`;
+
+export const Leafs2 = styled.div`
+  background-image: url(${leafs});
+  transform: rotate(180deg);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  bottom: 50%;
+  opacity: 0.1;
   width: 100%;
   max-width: 350px;
   background-size: cover;

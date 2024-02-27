@@ -1,34 +1,30 @@
-import { Container, Leafs, Info, Title, Text, Rounds, Round } from "./styles";
+import { Container, Leafs, Info, Title, Text, Leafs2 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 
-export default function FifthBlock() {
+export default function CommonInfo() {
   const ref1 = useRef(null);
   const refText = useRef(null);
-  const refColors = useRef(null);
 
   const [isLoadedTitle, setIsLoadedTitle] = useState(false);
 
   const [isLoadedText, setIsLoadedText] = useState(false);
-  const [isLoadedColor, setIsLoadedColor] = useState(false);
 
   const isInViewport1 = useIsInViewport(ref1);
   const isInViewportText = useIsInViewport(refText);
-  const isInViewportColor = useIsInViewport(refColors);
 
   useEffect(() => {
     // 👇️ listen for changes
     if (!isLoadedTitle && isInViewport1) setIsLoadedTitle(true);
-    if (!isLoadedColor && isInViewportColor) setIsLoadedColor(true);
     if (!isLoadedText && isInViewportText) setIsLoadedText(true);
-  }, [isInViewport1, isInViewportText, isInViewportColor]);
+  }, [isInViewport1, isInViewportText]);
 
   return (
     <Container>
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
-            Дресс-код
+            СВАДЕБНЫЙ ОРГАНИЗАТОР
           </Title>
         ) : (
           <Title key='hiddenTitle' ref={ref1}>
@@ -37,26 +33,25 @@ export default function FifthBlock() {
         )}
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            Мы будем очень рады, если ваши наряды будут соответствовать цветовой
-            гамме нашей свадьбы
+            Если вы заблудились, готовите нам сюрприз или у вас появились
+            какие-либо вопросы, вам с радостью поможет наш организатор:
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>
             <br /> <br /> <br /> <br />
           </Text>
         )}
-        {isLoadedColor ? (
-          <Rounds key='loaded' ref={refColors}>
-            <Round color={"#bfa89f"} />
-            <Round color={"#e8d9d6"} />
-            <Round color={"#f7efe2"} />
-            <Round color={"#dcdcde"} />
-            <Round color={"#bbc3c6"} />
-            <Round color={"#c9e1e3"} />
-          </Rounds>
-        ) : (
-          <Rounds key='hidden' ref={refColors}></Rounds>
-        )}
+        <Title>Ксения</Title>
+        <a href='tel:89272751199' style={{ textDecoration: "none" }}>
+          Тел. +79272751199
+        </a>
+        <Title>Пожелания</Title>
+
+        <Text>
+          Мы не хотим утруждать вас выбором подарка, поэтому будем рады вашему
+          вкладу в бюджет нашей молодой семьи.
+        </Text>
+        <Leafs2 />
         <Leafs />
       </Info>
     </Container>

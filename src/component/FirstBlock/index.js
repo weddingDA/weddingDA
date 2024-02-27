@@ -1,41 +1,17 @@
-import {
-  Container,
-  Title,
-  Names,
-  Man,
-  Women,
-  Data,
-  SwiperContainer,
-  Image,
-  ContainerData,
-} from "./styles";
-import { SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Container, Names, Man, Women, Data, ContainerData } from "./styles";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Image4 from "./assets/4.jpeg";
-
 export default function FirstBlock() {
   return (
     <Container>
-      <SwiperContainer
-        spaceBetween={0}
-        centeredSlides={true}
-        className='mySwiper'
-      >
-        <SwiperSlide>
-          <Image src={Image4} />
-        </SwiperSlide>
-      </SwiperContainer>
-      <Title>ПРИГЛАШЕНИЕ НА СВАДЬБУ</Title>
-
       <ContainerData>
         <Names>
-          <Man>Александр</Man> <p>и</p> <Women>Наталья</Women>
+          <Man>Денис</Man> <p>и</p> <Women>Анастасия</Women>
         </Names>
-        <Data>10 • 08 • 2024</Data>
+        <Data>3 августа 2024</Data>
       </ContainerData>
     </Container>
   );

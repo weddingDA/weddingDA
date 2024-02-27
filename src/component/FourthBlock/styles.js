@@ -2,6 +2,7 @@ import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
 import b11 from "./assets/b11.jpg";
+import bg from "./assets/bg.jpg";
 
 export const Brash = styled.div`
   right: 8px;
@@ -18,12 +19,22 @@ export const Brash = styled.div`
 `;
 
 export const Container = styled.div`
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1)
+    ),
+    url(${bg});
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 100px 300px;
 
   @media (max-width: 680px) {
     padding: 20px 0 80px;
@@ -225,8 +236,10 @@ export const Circle = styled.div`
 `;
 
 export const Im = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
 `;
 
 export const Timing = styled.div`

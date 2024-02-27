@@ -1,32 +1,17 @@
 import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
-import bg from "./assets/bg.jpg";
-
+import { Swiper } from "swiper/react";
 export const Container = styled.div`
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: url(${bg});
   position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
 
   iframe {
-    height: 0;
-    animation: aniIframe 2s forwards;
-
-    @keyframes aniIframe {
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 350px;
-      }
-    }
+    height: 350px;
   }
   @media (max-width: 680px) {
     padding: 20px 0 80px;
@@ -75,11 +60,14 @@ export const Info = styled.div`
   align-items: center;
   font-family: "miama";
   width: 350px;
+  margin-top: 32px;
   z-index: 2;
 `;
 
 export const Title = styled.p`
   font-size: 42px;
+  font-family: "czizh";
+
   color: black;
   text-align: center;
   opacity: 0;
@@ -145,4 +133,24 @@ export const Btn = styled.button`
   @media (min-width: 768px) {
     padding: 0 2.6rem;
   }
+`;
+
+export const SwiperContainer = styled(Swiper)`
+  --swiper-navigation-color: white;
+  --swiper-pagination-color: white;
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+
+  @media (max-width: 680px) {
+    height: 300px;
+    object-fit: cover;
+  }
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 100vh;
 `;

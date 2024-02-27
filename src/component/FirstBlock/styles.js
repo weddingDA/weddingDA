@@ -1,44 +1,37 @@
 import styled from "styled-components";
-import { Swiper } from "swiper/react";
+import bg from "./assets/bg.jpg";
 
 export const Container = styled.div`
   position: relative;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  height: calc(100% - 80px);
+  height: 700px;
 `;
 
 export const ContainerData = styled.div`
-  position: absolute;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 30px 0 0 50px;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   bottom: 20px;
 `;
 
-export const SwiperContainer = styled(Swiper)`
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-
-  @media (max-width: 680px) {
-    height: 100vh;
-    object-fit: cover;
-  }
-`;
-
 export const Title = styled.h2`
-  position: absolute;
   top: 40px;
   height: 40px;
   margin: 40px 0 0;
   margin: 0;
   animation: ani 1.5s forwards;
-  color: white;
+  color: black;
   font-size: 17px;
   font-family: "exo";
   line-height: 1;
@@ -61,10 +54,10 @@ export const Data = styled.h2`
   padding: 40px 0 0;
   margin: 0;
   animation: aniData 1.5s forwards;
-  color: white;
+  color: black;
   font-size: 24px;
   font-weight: bolder;
-  font-family: "exo";
+  font-family: "czizh";
   line-height: 1;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -88,13 +81,11 @@ export const Names = styled.span`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: "miama";
-  height: 280px;
-  gap: 8px;
-  margin: 40px 0;
-  font-size: 64px;
-  color: white;
-  width: 100%;
+  font-family: "czizh";
+  gap: 20px;
+  line-height: 32px;
+  font-size: 32px;
+  color: black;
   opacity: 0;
   animation: animate 1.5s forwards;
   animation-delay: 0.5ms;
@@ -120,56 +111,36 @@ export const Names = styled.span`
 `;
 
 export const Man = styled.p`
-  position: absolute;
-  top: 20px;
-  left: 0;
-  line-height: 82px;
-  font-size: 64px;
-  transform: translate(0, 0);
-  animation: aniMan 1.5s forwards;
+  line-height: 42px;
+  font-size: 44px;
+  animation: aniMan 2s forwards;
   animation-delay: 0.5ms;
+  opacity: 0;
 
   @keyframes aniMan {
     0% {
-      left: 0%;
-      transform: translate(0, 0);
+      opacity: 0;
     }
     100% {
-      left: 50%;
-      transform: translate(-50%, 0);
+      opacity: 1;
     }
-  }
-
-  @media (max-width: 680px) {
-    line-height: 52px;
-    font-size: 48px;
   }
 `;
 
 export const Women = styled.p`
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-  line-height: 82px;
-  font-size: 64px;
-  transform: translate(0, 0);
-  animation: aniWomen 2s forwards;
+  line-height: 42px;
+  font-size: 44px;
+  animation: aniWomen 3s forwards;
   animation-delay: 1ms;
+  opacity: 0;
 
   @keyframes aniWomen {
     0% {
-      right: 0%;
-      transform: translate(0, 0);
+      opacity: 0;
     }
     100% {
-      right: 50%;
-      transform: translate(50%, 0);
+      opacity: 1;
     }
-  }
-
-  @media (max-width: 680px) {
-    line-height: 52px;
-    font-size: 48px;
   }
 `;
 

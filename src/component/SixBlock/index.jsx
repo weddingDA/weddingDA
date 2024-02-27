@@ -26,19 +26,16 @@ export default function SixBlock() {
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
-            Анкета <br />
-            гостя
+            Анкета гостя
           </Title>
         ) : (
           <Title key='hiddenTitle' ref={ref1}>
-            <br />
-            <br />
             <br />
           </Title>
         )}
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
-            ОТВЕТЬТЕ, ПОЖАЛУЙСТА, НА НЕСКОЛЬКО ВОПРОСОВ НИЖЕ
+            Просим подтвердить своё присутствие до 03 июля 2024 г.
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>
@@ -46,10 +43,10 @@ export default function SixBlock() {
           </Text>
         )}
         <iframe
-          src='https://forms.yandex.ru/u/65d47bab5056903371f59638/?iframe=1'
+          src='https://forms.yandex.ru/cloud/65de409643f74f426b635290/?iframe=1'
           frameborder='0'
-          name='ya-form-65d47bab5056903371f59638'
-          height='1480'
+          name='ya-form-65de409643f74f426b635290'
+          height='500'
           width='370'
           scrolling='no'
         ></iframe>

@@ -1,7 +1,8 @@
-import { Container, Numbers } from "./styles";
+import { Container, Numbers, NumbersContainer, Names, Text } from "./styles";
+import { Leafs } from "../SecondBlock/styles";
 
 export default function TimerComponent() {
-  var endDate = new Date("Jul 27, 2024 15:30:00").getTime();
+  var endDate = new Date("Aug 03, 2024 15:30:00").getTime();
   var decCache = [],
     decCases = [2, 0, 1, 1, 1, 2];
 
@@ -46,10 +47,18 @@ export default function TimerComponent() {
 
   return (
     <Container>
-      <Numbers id='timer-days' />
-      <Numbers id='timer-hours' />
-      <Numbers id='timer-mins' />
-      <Numbers id='timer-secs' />
+      <Names>
+        Денис и <br />
+        Анастасия
+      </Names>
+      <Leafs />
+      <Text>До свадьбы</Text>
+      <NumbersContainer>
+        <Numbers id='timer-days' />
+        <Numbers id='timer-hours' />
+        <Numbers id='timer-mins' />
+        <Numbers id='timer-secs' />
+      </NumbersContainer>
     </Container>
   );
 }

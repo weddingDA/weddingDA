@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import leaf from "../SecondBlock/assets/bg.png";
-import bg from "./bg.png";
+import leaf from "../SecondBlock/assets/bg.jpg";
 
 export const Container = styled.div`
   padding: 80px 0;
@@ -44,7 +43,6 @@ export const Bg2 = styled.div`
   top: 0;
   position: absolute;
   right: -200px;
-  background-image: url(${bg});
   background-size: 800px;
   height: 800px;
   width: 800px;
@@ -71,8 +69,8 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 54px;
-  line-height: 52px;
+  font-size: 42px;
+  font-family: "miama";
   text-align: center;
   opacity: 0;
 
@@ -89,7 +87,7 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: "exo";
+  font-family: "oranienbaum";
   font-size: 17px;
   line-height: 1;
   font-weight: 400;

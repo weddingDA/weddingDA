@@ -12,10 +12,11 @@ import {
 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
-import b from "./assets/b.png";
-import c from "./assets/c.png";
-import cl from "./assets/cl.png";
-import p from "./assets/p.png";
+import b from "./assets/transfer.jpeg";
+import c from "./assets/welcome.jpeg";
+import cl from "./assets/fiinal.jpeg";
+import p from "./assets/banket.jpeg";
+import { Leafs } from "../SecondBlock/styles";
 
 export default function FourthBlock() {
   const ref1 = useRef(null);
@@ -35,11 +36,11 @@ export default function FourthBlock() {
 
   return (
     <Container>
+      <Leafs />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>
             Программа дня
-            <Brash />
           </Title>
         ) : (
           <Title key='hiddenTitle' ref={ref1}>
@@ -49,48 +50,48 @@ export default function FourthBlock() {
         {isLoadedText ? (
           <Timing key='hText' ref={refText}>
             <Times>
-              <Time>15:00</Time>
+              <Time>13:30</Time>
               <Im src={b} />
               <Text>
-                <b>WELCOME</b>
+                <b>Трансфер</b>
                 <br />
                 <br />
-                на торжество возьмите с собой свои улыбки и хорошее настроение
+                сбор гостей для отправления на место торжества
               </Text>
             </Times>
             <Line />
             <Times>
-              <Time>15:30</Time>
+              <Time>14:30</Time>
               <Im src={c} />
               <Text>
-                <b>Выездная церемония</b>
+                <b>Сбор гостей</b>
                 <br />
                 <br />
-                приготовьте платочки для трогательного момента
+                собираясь на мероприятие, просим взять с собой ваши прекрасные
+                улыбки и хорошее настроение
               </Text>
             </Times>
             <Line />
 
             <Times>
-              <Time>16:00</Time>
+              <Time>15:00</Time>
               <Im src={p} />
               <Text>
-                <b>Съемка с гостями на фотозоне</b>
+                <b>Начало банкета</b>
                 <br />
                 <br />
-                время для создания памятных фото и приятных воспоминаний
+                время вкусной еды, танцев и развлечений
               </Text>
             </Times>
             <Line />
 
             <Times>
-              <Time>16:30</Time>
+              <Time>21:00</Time>
               <Im src={cl} />
               <Text>
-                <b>Банкет</b>
+                <b>Финал</b>
                 <br />
-                <br />
-                время танцев, вкусной еды, чудесных пожеланий и развлечений
+                <br />К сожалению, даже такой прекрасный вечер может закончится
               </Text>
             </Times>
           </Timing>
