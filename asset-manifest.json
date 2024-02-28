@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weddingDA/static/css/main.c98a4754.css",
-    "main.js": "/weddingDA/static/js/main.42c2d08a.js",
+    "main.js": "/weddingDA/static/js/main.1cad047e.js",
     "static/js/787.5b30f80b.chunk.js": "/weddingDA/static/js/787.5b30f80b.chunk.js",
     "static/media/ev2.png": "/weddingDA/static/media/ev2.df77902a320cc1cee5a0.png",
     "static/media/lemon.otf": "/weddingDA/static/media/lemon.024c8ca4a177ed80a27a.otf",
@@ -30,11 +30,11 @@
     "static/media/lavander-top.png": "/weddingDA/static/media/lavander-top.1dcf46ea595c405a78f9.png",
     "index.html": "/weddingDA/index.html",
     "main.c98a4754.css.map": "/weddingDA/static/css/main.c98a4754.css.map",
-    "main.42c2d08a.js.map": "/weddingDA/static/js/main.42c2d08a.js.map",
+    "main.1cad047e.js.map": "/weddingDA/static/js/main.1cad047e.js.map",
     "787.5b30f80b.chunk.js.map": "/weddingDA/static/js/787.5b30f80b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c98a4754.css",
-    "static/js/main.42c2d08a.js"
+    "static/js/main.1cad047e.js"
   ]
 }
